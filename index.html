@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">x  
+  </head>
+  <body>
+    <h1 id="title">Bens Umfrage</h1>
+    <p id="description">Danke, dass sie teilnehmen</p>
+    <form id="survey-form" >
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" required placeholder="Name eintragen" name="name"/></label>
+        <label id="email-label" class="oben-groesser">Email<input id="email" type="email" required placeholder="Email eintragen" name="email"/></label>
+        <label id="number-label" class="oben-groesser">Ihr Alter<input id="number" type="number" placeholder="Alter" min="13" max="120" /></label>
+        <label class="oben-groesser">Ihre aktuelle Rolle
+        <select id="dropdown">
+          <option value="">Wählen sie eine Option</option>
+          <option value="1">Erste Option </option>
+          <option value="2">Zweite Option</option>
+        </select>
+        <label class="oben-groesser">Würden Sie uns weiterempfehlen?
+        </label>
+        <label><input type="radio" name="empfehlung" class="inline" value="sicher"/> Ja sicher</label>
+        <label class="oben-kleiner"><input type="radio" name="empfehlung" class="inline" value="glaube"/> Glaube schon</label>
+        <label class="oben-kleiner"><input type="radio" name="empfehlung" class="inline" value="nicht"/> Eher nicht</label>
+        </label>
+        <label class="oben-groesser"> Was würden sie gerne an der Webseite ändern? (Markieren sie alle Optionen)
+      <label>
+          <input type="checkbox" value="Mehr" class="inline"  /> Mehr Informationen
+			  </label>
+        <label class="oben-kleiner">
+          <input type="checkbox" value="Weniger" class="inline"  /> Weniger Informationen
+			  </label>
+        <label class="oben-kleiner">
+          <input type="checkbox" value="nichts" class="inline"  /> Nichts
+			  </label>
+        </label>
+        <label class="oben-groesser">Notieren sie weitere Anmerkungen:
+          <textarea name="message" rows="3" cols="30" placeholder="Notieren sie weitere Anmerkungen..." ></textarea>
+			  </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+
+  </body>
+</html>
